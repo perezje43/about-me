@@ -3,9 +3,9 @@ alert('Hi! Let\'s play a guessing game about me...');
 var answer1 = prompt('Am I from Seattle?').toUpperCase();
 
 if (answer1 === 'Y' || answer1 === 'YES') {
-  alert('Correct!');
+  alert('Correct! I am from Seattle');
 } else {
-  alert('No!');
+  alert('No! I am from Seattle!');
 }
 
 var answer2 = prompt('Have I been skydiving before?').toUpperCase();
@@ -13,7 +13,7 @@ var answer2 = prompt('Have I been skydiving before?').toUpperCase();
 if (answer2 === 'Y' || answer2 === 'YES') {
   alert('No! But I plan to!');
 } else {
-  alert('Correct!');
+  alert('Correct! I am planning to!');
 }
 
 var answer3 = prompt('My favorite place I\'ve recently visted is DC?' ).toUpperCase();
@@ -35,7 +35,7 @@ if (answer4 === 'Y' || answer4 === 'YES') {
 var answer5 = prompt('Have I studied abroad in Tahiti?').toUpperCase();
 
 if (answer5 === 'Y' || answer5 === 'YES') {
-  alert('Correct!');
+  alert('Correct! I have studied abroad in Tahiti!');
 } else {
   alert('No! I did study abroad in Tahiti.');
 }
