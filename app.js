@@ -41,25 +41,52 @@ if (answer5 === 'Y' || answer5 === 'YES') {
   alert('No! I did study abroad in Tahiti.');
 }
 
-var guessNumber = 1;
+//User is asked to guess the age I am and summarizes how many guesses they've use.
+var ageGuesses = 1;
 var answer6 = parseInt(prompt('What is my age?'));
 
 if(answer6 === 23){
   alert('Wow ' + userName + '! You\'re right, great guess!');
 }else{
-  while(guessNumber <= 4 && answer6 != 21){
+  while(ageGuesses <= 4 && answer6 != 21){
     if(answer6 > 23){
       answer6 = prompt('Sorry ' + userName + ', a little lower.');
-      guessNumber++;
+      ageGuesses++;
     }else{
       answer6 = prompt('Sorry ' + userName + ', a little higher.');
-      guessNumber++;
+      ageGuesses++;
     }
   }
 }
 
-if(guessNumber < 4){
-  alert('You used ' + guessNumber + ' out of your 4 guesses!');
+if(ageGuesses < 4){
+  alert('You used ' + ageGuesses + ' out of your 4 guesses!');
 }else{
   alert('Sorry, you used all your guesses! My age is 23.');
+}
+
+//User is asked to guess a place I would like to visit and reports how many guesses they've used.
+var guessNumber = 1;
+var places = ['JAPAN', 'BRAZIL', 'SPAIN', 'NEW ZEALAND', 'MOROCCO', 'INDIA'];
+guess = false;
+
+var answer7 = prompt('Can you guess a country I would like to visit?').toUpperCase();
+
+while(guess === false && guessNumber < 6){
+  for(var i = 0; i < 6; i++){
+    if(answer7 === places[i]){
+      alert('Correct ' + userName + '! You\'ve used ' + guessNumber + ' guesses.');
+      guess = true;
+      break;
+    }else{
+    }
+  }
+  if(guess === false){
+    answer7 = prompt('Guess Again').toUpperCase();
+    guessNumber++;
+  }
+}
+
+if(guess === false){
+  alert('Sorry ' + userName + ', you have run out of guesses.');
 }
