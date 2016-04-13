@@ -1,4 +1,5 @@
-alert('Hi! Let\'s play a guessing game about me...');
+var userName = prompt('Hi! What is your name?');
+alert('Hi ' + userName + '! Let\'s play a guessing game about me...');
 
 var answer1 = prompt('Am I from Seattle?').toUpperCase();
 
@@ -38,4 +39,27 @@ if (answer5 === 'Y' || answer5 === 'YES') {
   alert('Correct! I have studied abroad in Tahiti!');
 } else {
   alert('No! I did study abroad in Tahiti.');
+}
+
+var guessNumber = 1;
+var answer6 = parseInt(prompt('What is my age?'));
+
+if(answer6 === 23){
+  alert('Wow ' + userName + '! You\'re right, great guess!');
+}else{
+  while(guessNumber <= 4 && answer6 != 21){
+    if(answer6 > 23){
+      answer6 = prompt('Sorry ' + userName + ', a little lower.');
+      guessNumber++;
+    }else{
+      answer6 = prompt('Sorry ' + userName + ', a little higher.');
+      guessNumber++;
+    }
+  }
+}
+
+if(guessNumber < 4){
+  alert('You used ' + guessNumber + ' out of your 4 guesses!');
+}else{
+  alert('Sorry, you used all your guesses! My age is 23.');
 }
