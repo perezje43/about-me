@@ -2,6 +2,23 @@ var userName = prompt('Hi! What is your name?');
 alert('Hi ' + userName + '! Let\'s play a guessing game about me...');
 
 var totalTally = 0;
+
+// var questionsArray = ['Am I from Seattle?', 'Have I been skydiving before?', 'My favorite place I\'ve recently visted is DC?', 'My favorite burger place is In\' N\' Out?', 'Have I studied abroad in Tahiti?'];
+//
+// var correctResponse = ['Correct! I am from Seattle', 'Correct! I am planning to!', 'Correct! My favorite landmark was the Jefferson Memorial.', 'You\'re right! But there has never been a burger I didn\'t like!', 'Correct! I have studied abroad in Tahiti!'];
+//
+// var wrongResponse = ['No! I am from Seattle!', 'No! But I plan to!', 'Wrong! It was my favorite recent visit!', 'No! But I really want to try it!', 'No! I did study abroad in Tahiti.'];
+//
+// for (var i = 0; i < questionsArray.length; i++) {
+//   var answer = prompt(questionsArray[i]).toUpperCase();
+//   if (answer === 'YES' || answer === 'Y') {
+//     alert(correctResponse[i]);
+//     totalTally++;
+//   }else{
+//     alert(wrongResponse[i]);
+//   }
+// }
+
 var answer1 = prompt('Am I from Seattle?').toUpperCase();
 
 if (answer1 === 'Y' || answer1 === 'YES') {
@@ -54,7 +71,7 @@ var answer6 = parseInt(prompt('What is my age?'));
 if(answer6 === 23){
   alert('Wow ' + userName + '! You\'re right, great guess!');
 }else{
-  while(ageGuesses <= 4 && answer6 != 21){
+  while(ageGuesses <= 4 && answer6 != 23){
     if(answer6 > 23){
       answer6 = prompt('Sorry ' + userName + ', a little lower.');
       ageGuesses++;
