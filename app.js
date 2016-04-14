@@ -3,11 +3,26 @@ alert('Hi ' + userName + '! Let\'s play a guessing game about me...');
 
 var totalTally = 0;
 
-// var questionsArray = ['Am I from Seattle?', 'Have I been skydiving before?', 'My favorite place I\'ve recently visted is DC?', 'My favorite burger place is In\' N\' Out?', 'Have I studied abroad in Tahiti?'];
-//
-// var correctResponse = ['Correct! I am from Seattle', 'Correct! I am planning to!', 'Correct! My favorite landmark was the Jefferson Memorial.', 'You\'re right! But there has never been a burger I didn\'t like!', 'Correct! I have studied abroad in Tahiti!'];
-//
-// var wrongResponse = ['No! I am from Seattle!', 'No! But I plan to!', 'Wrong! It was my favorite recent visit!', 'No! But I really want to try it!', 'No! I did study abroad in Tahiti.'];
+var questionsArray = ['Am I from Seattle?',
+'Have I been skydiving before?',
+'My favorite place I\'ve recently visted is DC?',
+'My favorite burger place is In\' N\' Out?',
+'Have I studied abroad in Tahiti?'
+];
+
+var correctResponse = ['Correct! I am from Seattle',
+'Correct! I am planning to!',
+'Correct! My favorite landmark was the Jefferson Memorial.',
+'You\'re right! But there has never been a burger I didn\'t like!',
+'Correct! I have studied abroad in Tahiti!'
+];
+
+var wrongResponse = ['No! I am from Seattle!',
+'No! But I plan to!',
+'Wrong! It was my favorite recent visit!',
+'No! But I really want to try it!',
+'No! I did study abroad in Tahiti.'
+];
 //
 // for (var i = 0; i < questionsArray.length; i++) {
 //   var answer = prompt(questionsArray[i]).toUpperCase();
@@ -20,52 +35,62 @@ var totalTally = 0;
 // }
 
 function questionOne() {
-  var answer1 = prompt('Am I from Seattle?').toUpperCase();
+  var answer1 = prompt(questionsArray[0]).toUpperCase();
   if (answer1 === 'Y' || answer1 === 'YES') {
-    alert('Correct! I am from Seattle');
+    alert(correctResponse[0]);
+    console.log(correctResponse[0]);
     totalTally++;
   } else {
-    alert('No! I am from Seattle!');
+    alert(wrongResponse[0]);
+    console.log(wrongResponse[0]);
   }
 }
 
 function questionTwo() {
-  var answer2 = prompt('Have I been skydiving before?').toUpperCase();
-  if (answer2 === 'Y' || answer2 === 'YES') {
-    alert('No! But I plan to!');
+  var answer2 = prompt(questionsArray[1]).toUpperCase();
+  if (answer2 === 'N' || answer2 === 'NO') {
+    alert(correctResponse[1]);
+    console.log(correctResponse[1]);
   } else {
-    alert('Correct! I am planning to!');
+    alert(wrongResponse[1]);
+    console.log(wrongResponse[1]);
     totalTally++;
   }
 }
 
 function questionThree() {
-  var answer3 = prompt('My favorite place I\'ve recently visted is DC?' ).toUpperCase();
+  var answer3 = prompt(questionsArray[2]).toUpperCase();
   if (answer3 === 'Y' || answer3 === 'YES') {
-    alert('Correct! My favorite landmark was the Jefferson Memorial.');
+    alert(correctResponse[2]);
+    console.log(correctResponse[2]);
     totalTally++;
   } else {
-    alert('Wrong! It was my favorite recent visit!');
+    alert(wrongResponse[2]);
+    console.log(wrongResponse[2]);
   }
 }
 
 function questionFour() {
-  var answer4 = prompt('My favorite burger place is In\' N\' Out?').toUpperCase();
-  if (answer4 === 'Y' || answer4 === 'YES') {
-    alert('No! But I really want to try it!');
+  var answer4 = prompt(questionsArray[3]).toUpperCase();
+  if (answer4 === 'N' || answer4 === 'NO') {
+    alert(correctResponse[3]);
+    console.log(correctResponse[3]);
   } else {
-    alert('You\'re right! But there has never been a burger I didn\'t like!');
+    alert(wrongResponse[3]);
+    console.log(wrongResponse[3]);
     totalTally++;
   }
 }
 
 function questionFive() {
-  var answer5 = prompt('Have I studied abroad in Tahiti?').toUpperCase();
+  var answer5 = prompt(questionsArray[4]).toUpperCase();
   if (answer5 === 'Y' || answer5 === 'YES') {
-    alert('Correct! I have studied abroad in Tahiti!');
+    alert(correctResponse[4]);
+    console.log(correctResponse[4]);
     totalTally++;
   } else {
-    alert('No! I did study abroad in Tahiti.');
+    alert(wrongResponse[4]);
+    console.log(wrongResponse[4]);
   }
 }
 
