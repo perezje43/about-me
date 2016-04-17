@@ -1,0 +1,39 @@
+.navigation {
+    width: 286px;
+    float: left;
+}
+
+.categories {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  width: 286px;
+}
+
+.categories li {
+  border: 1px solid white;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+section {
+  padding-left: 10px;
+  position: absolute;
+  left: 290px;
+}
+
+.about{
+  margin-top: 0px;
+}
+
+.name {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.position {
+  margin-top: 0px;
+  text-align: center;
+  font-style: italic;
+}
