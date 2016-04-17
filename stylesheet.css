@@ -19,8 +19,10 @@
 
 section {
   padding-left: 10px;
+  padding-right: 10px;
   position: absolute;
   left: 290px;
+
 }
 
 .about{
@@ -36,4 +38,16 @@ section {
   margin-top: 0px;
   text-align: center;
   font-style: italic;
+}
+
+body {
+  background-color: #40859C;
+}
+
+.list {
+  margin-bottom: 0px;
+}
+
+.description {
+  margin-top: 0px;
 }
